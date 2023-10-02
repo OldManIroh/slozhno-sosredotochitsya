@@ -15,7 +15,7 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <div class="header__decor header__point"></div>
+      <div class="header__decor"></div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -50,7 +50,7 @@
           надо</span
         >
       </p>
-      <div class="header__decor-bottom"></div>
+      <div class="decor-bottom"></div>
     </header>
     <div class="content">
       <section class="content__section shift-right">
@@ -175,15 +175,18 @@
         <h2 class="content__section-subtitle-images title-decor">
           А можно в картинках?
         </h2>
-        <img class="images" src="./images/sunset.png" alt="Закат" />
-        <img class="images" src="./images/ice-cream.png" alt="Мороженое" />
-        <img class="images" src="./images/tape.png" alt="Касета" />
-        <img class="images" src="/images/books.png" alt="Книги" />
-        <img class="images" src="./images/street.png" alt="Улица" />
+        <div class="content__section-img">
+        <img class="images__sunset images" src="./images/sunset.png" alt="Закат" />
+        <img class="images__ice-cream images" src="./images/ice-cream.png" alt="Мороженое" />
+        <img class="images__tape images" src="./images/tape.png" alt="Касета" />
+        <img class="images__books images" src="/images/books.png" alt="Книги" />
+        <img class="images__street images" src="./images/street.png" alt="Улица" />
+      </div>
       </section>
     </div>
     <footer class="footer">
-      <h1 class="footer__title">focus</h1>
+      <h2 class="footer__title" >focus</h2>
+      <div class="decor-bottom"></div>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>
