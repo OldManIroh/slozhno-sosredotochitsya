@@ -2,19 +2,17 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-
+  font-family: IBM Plex Mono, sans-serif;
   background-color: var(--main-background-color);
   background-image: var(--cover-image);
   background-repeat: no-repeat;
   background-size: auto 100vh;
   background-position: top;
   background-attachment: fixed;
-  font-family: IBM Plex Mono, sans-serif;
 }
 .header__decor {
   position: absolute;
   display: flex;
-  color: var(--header__decor-color);
   color: #ff0070;
   text-align: center;
   font-size: 18px;
@@ -34,8 +32,9 @@
   background-position: center;
 }
 .header__theme-menu {
-  padding-block-start: 67px;
-  padding-block-end: 72px;
+  position: absolute;
+  padding-block-start: 56px;
+  right: 0px;
 }
 
 .header__theme-menu-button {
@@ -46,16 +45,14 @@
   font-size: 18px;
   line-height: 18px; /* 100% */
   text-transform: lowercase;
-  margin-right: 8px;
   border: 1px solid transparent;
-  padding-right: 13px;
-  padding-left: 13px;
-  padding-bottom: 5px;
+  margin-block-start: 6px;
+  padding: 4px 12px;
 }
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
 }
 .header__theme-menu-button_active {
   pointer-events: none;
@@ -72,9 +69,8 @@
 }
 .header {
   position: relative;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(3, auto);
+  height: 100vh;
+
   margin: 10px;
 }
 .decorated-zone::before {
@@ -99,11 +95,11 @@
 .header__title {
   color: var(--title-color);
   text-shadow: 4px 4px 0px var(--accent-color);
-
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 95.7px */
+  padding-block-start: 230px;
   padding-block-end: 55px;
 }
 .header__subtitle {
@@ -116,11 +112,6 @@
   width: 355px;
   display: flex;
   flex-direction: column;
-  margin-block-end: 55px;
-}
-.header__theme-menu-item {
-  display: grid;
-  justify-content: end;
 }
 
 .content {
@@ -133,7 +124,6 @@
 
 .content__section-title {
   color: var(--content__section-title-color);
-
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -180,6 +170,7 @@
   gap: 10px;
 }
 .footer {
+  height: 100vh;
   position: relative;
   margin: 10px;
   flex-shrink: 0;
@@ -247,14 +238,12 @@
   }
   .content__section-title {
     width: clamp(14.75rem, -0.063rem + 30.86vw, 19.688rem);
+    padding-block-start: 20px;
   }
   .shift-right {
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
-  }
-  .content__section-title {
-    padding-block-start: 20px;
   }
   .content__section-images {
     padding-block-end: 59px;
