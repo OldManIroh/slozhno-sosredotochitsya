@@ -211,7 +211,6 @@
   .header {
     height: 96vh;
     margin: 20px;
-    
   }
   .header__theme-menu {
     padding-block-start: 163px;
@@ -316,22 +315,19 @@
   }
 }
 @media (width >= 1024px) {
-  .header{
+  .header {
     height: 95vh;
   }
   .header__theme-menu {
-    padding-block-start: 0;
     padding-block-end: 280px;
-  }
-  .header__theme-menu{
-    margin-block-start:-8px ;
+    margin-block-start: -8px;
     left: 0;
     top: 0;
   }
   .header__theme-menu-list {
     flex-direction: row;
     justify-content: center;
-    gap:11px;
+    gap: 11px;
   }
   .header__title {
     padding-block-start: 300px;
@@ -352,7 +348,7 @@
     padding-block-end: 300px;
     text-shadow: 2px 2px #ff0070;
   }
-  .footer{
+  .footer {
     height: 95vh;
   }
 }
