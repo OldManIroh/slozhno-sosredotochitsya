@@ -12,7 +12,7 @@
   --accent-color: #ff0070;
   --cover-image: url("../images/cover-image-dark.png");
   --main-background-color: #000028;
-  --header__title-color: #db00ff;
+  --title-color: #db00ff;
   --header__subtitle-color: #000028;
   --content__section-title-color: #ff0070;
   --content__section-text-color: #f1b2ce;
@@ -20,4 +20,10 @@
   --title-decor: #ff0070;
   --header__theme-menu-button-color: #ff0070;
   --hover-color: rgba(255, 0, 112, 0.4);
+}
+.page.theme_dark .header__decor{
+  visibility: visible;
+}
+.page.theme_auto .header__decor{
+  visibility: visible;
 }
