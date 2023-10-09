@@ -21,9 +21,11 @@
   --header__theme-menu-button-color: #ff0070;
   --hover-color: rgba(255, 0, 112, 0.4);
 }
-.page.theme_dark .header__decor{
+
+.page.theme_dark .header__decor {
   visibility: visible;
 }
-.page.theme_auto .header__decor{
+
+.page.theme_auto .header__decor {
   visibility: visible;
 }

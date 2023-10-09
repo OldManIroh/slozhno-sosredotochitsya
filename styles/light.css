@@ -37,6 +37,7 @@
     --header__theme-menu-button-color: #353430;
     --hover-color: rgba(50, 49, 45, 0.4);
   }
+  
   .page.theme_auto .header__decor{
     visibility: hidden;
   }
